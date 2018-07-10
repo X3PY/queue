@@ -48,9 +48,12 @@
     deq = collections.deque() # 덱 생성
     deq.append('data')        # data를 덱의 오른쪽(마지막)에 추가해준다
     deq.appendleft('data')    # data를 덱의 왼쪽(맨 앞)에 추가해준다.
-    deq.extend('data')        # iterable argument를 오른쪽(마지막)에 추가해준다.(iterable argument란 각 요소를 하나씩 반환 가능한 object를 말한다.) ex) 'data'의 경우 'd' 'a' 't' 'a' 로 반환 가능하다.
+    deq.extend('data')        # iterable argument를 오른쪽(마지막)에 추가해준다.
+                              # iterable argument란? 각 요소를 하나씩 반환 가능한 object를 말한다.
+                              # 'data'의 경우 'd' 'a' 't' 'a' 로 반환 가능하다.
     deq.extendleft('data')    # iterable argument를 왼쪽(맨 앞)에 데이터를 추가해준다.
     deq.pop()                 # 오른쪽(마지막) 요소를 반환후 제거한다.
     deq.popleft()             # 왼쪽(맨 앞) 요소를 반환후 제거한다.
-    deq.rotate(n)             # 덱의 요소들을 n값 만큼 회전해주는 메소드이다. n값이 음수면 왼쪽으로 회전하고 n값이 양수면 오른쪽으로 회전한다.
+    deq.rotate(n)             # 덱의 요소들을 n값 만큼 회전해주는 메소드이다.
+                              # n값이 음수면 왼쪽으로 회전하고 n값이 양수면 오른쪽으로 회전한다.
 ```
