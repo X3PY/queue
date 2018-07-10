@@ -17,13 +17,13 @@
 --------------------
 * 파이썬에서는 queue 모듈을 통해서 queue를 구현할 수 있다.
 
-'''python
+```python
     import queue
     q = queue.Queue() # 큐 생성
     q.put('data')     # 큐 객체에 데이터 입력
     q.qsize()         # 큐 객체에 저장된 데이터 갯수
     q.get()           # 큐 객체에서 값을 출력
-'''
+```
 
 자료구조 Deque
 =============
@@ -43,7 +43,7 @@
 파이썬에서의 deque
 -----------------------
 * collections.deque 의 메소드들
-'''python
+```python
     import collections
     deq = collections.deque() # 덱 생성
     deq.append('data')        # data를 덱의 오른쪽(마지막)에 추가해준다
@@ -53,4 +53,4 @@
     deq.pop()                 # 오른쪽(마지막) 요소를 반환후 제거한다.
     deq.popleft()             # 왼쪽(맨 앞) 요소를 반환후 제거한다.
     deq.rotate(n)             # 덱의 요소들을 n값 만큼 회전해주는 메소드이다. n값이 음수면 왼쪽으로 회전하고 n값이 양수면 오른쪽으로 회전한다.
-'''
+```
